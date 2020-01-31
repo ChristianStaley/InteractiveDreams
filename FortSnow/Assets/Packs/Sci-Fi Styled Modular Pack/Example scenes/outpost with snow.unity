@@ -11431,6 +11431,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1896609313}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1319154465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319154464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8402c5d0f89de2f47878e6cb36061ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fl_cooldown: 1
+  fl_accuracy: 100
+  in_ammo: 1000
+  GO_snowball: {fileID: 6956838764101089066, guid: b7e5301e5efd33248a06453de136962d,
+    type: 3}
 --- !u!4 &1321768356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 435098, guid: 27b528ce18adf6f48bd23431f0fd8f26,

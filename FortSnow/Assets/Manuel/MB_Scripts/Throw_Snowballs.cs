@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Throw_Snowballs : MonoBehaviour
 {
     public float fl_cooldown = 1F;
     public float fl_accuracy = 100;
     public int in_ammo = 1000;
+    private float fl_next_attack_time;
 
     // GameObjects 
     public GameObject GO_snowball;
@@ -21,7 +22,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Attack();
     }
     void Attack()
     {
