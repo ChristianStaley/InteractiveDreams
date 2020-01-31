@@ -221,4 +221,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e95b86db5fa234084cfcac79a9507d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  A_door: {fileID: 0}
+  st_doorNumber: glass_door
+  go_PC: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
