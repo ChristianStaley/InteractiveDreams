@@ -32,7 +32,7 @@ public class Throw_Snowballs : MonoBehaviour
             // Reduce Ammo;
             in_ammo--;
             // Create Projectile slightly to the right and in front of the PC using the camera Rotation
-            GameObject _GO_snoowball_clone = Instantiate(GO_snowball, transform.position + transform.TransformDirection(new Vector3(0.25f, 0f, 1.5F)), transform.rotation);
+            GameObject _GO_snoowball_clone = Instantiate(GO_snowball, transform.position + transform.TransformDirection(new Vector3(0f, 0f, 0F)), transform.rotation);
            
         }
     }//-----
