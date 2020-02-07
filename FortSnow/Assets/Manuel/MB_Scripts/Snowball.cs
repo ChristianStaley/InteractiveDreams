@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Snowball : MonoBehaviour
 {
+
+    public GameObject Decal;
     // ----------------------------------------------------------------------
     // Variables
     public float fl_range = 20;
@@ -28,6 +30,7 @@ public class Snowball : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
+        Instantiate(Decal, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }
