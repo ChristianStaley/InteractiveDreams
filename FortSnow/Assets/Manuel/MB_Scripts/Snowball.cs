@@ -30,7 +30,12 @@ public class Snowball : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Instantiate(Decal, transform.position, transform.rotation);
-        Destroy(gameObject);
+        if(collision.gameObject.layer != 8)
+        {
+            GameObject newDecal = Instantiate(Decal, transform.position - new Vector3(0,0.14f,0), transform.rotation * Quaternion.Euler(-75, 0, 0));
+            Destroy(newDecal, 5.0f);
+            Destroy(gameObject);
+        }
+        
     }
 }

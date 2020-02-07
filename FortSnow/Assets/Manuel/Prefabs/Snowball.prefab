@@ -4876,6 +4876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5600f0071922e8c4cbdd8c0f81add97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Decal: {fileID: 1650328464054638367, guid: 65965a1bdf3b08540acd0072608cc09d, type: 3}
   fl_range: 20
   fl_speed: 10
   snowball: {fileID: 6331464802564631984}

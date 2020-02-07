@@ -19,15 +19,36 @@ public class Change_Time : MonoBehaviour
 
         print(_time);
 
-        if (theTime.Hour <= 12)
+        if(theTime.Hour == 24 && theTime.Hour > 6)
         {
-            l_worldLight.transform.Rotate(100, 100, 100);
+            l_worldLight.transform.Rotate(-150, 0, 0);
         }
+        if (theTime.Hour <= 6 && theTime.Hour > 12)
+        {
+            l_worldLight.transform.Rotate(-100, 0, 0);
+        }
+        if (theTime.Hour <= 12 && theTime.Hour > 18)
+        {
+            l_worldLight.transform.Rotate(0, 0, 0);
+        }
+        else if(theTime.Hour <= 18 && theTime.Hour > 24)
+        {
+            l_worldLight.transform.Rotate(100, 0, 0);
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("r"))
+        {
+            l_worldLight.transform.Rotate(-50, 0, 0);
+        }
+        if (Input.GetKeyDown("t"))
+        {
+            l_worldLight.transform.Rotate(50, 0, 0);
+        }
+
     }
 }
