@@ -18,7 +18,7 @@ public class PickupObject : MonoBehaviour
     {
         if (interacted)
         {
-            transform.position = Vector3.MoveTowards(transform.position, moveLocation.transform.position, 5f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(moveLocation.transform.position.x, moveLocation.transform.position.y - 0.5f, moveLocation.transform.position.z), 5f * Time.deltaTime);
         }
     }
 
