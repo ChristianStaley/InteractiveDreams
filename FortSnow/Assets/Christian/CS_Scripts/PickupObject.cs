@@ -5,6 +5,10 @@ using UnityEngine;
 public class PickupObject : MonoBehaviour
 {
     bool interacted = false;
+
+    public GameObject collectableImage;
+    public GameObject shelfObject;
+
     Transform moveLocation;
 
     // Start is called before the first frame update
@@ -29,6 +33,8 @@ public class PickupObject : MonoBehaviour
         moveLocation = playerLocation;
         gameObject.GetComponent<Collider>().enabled = false;
         Destroy(gameObject, 0.5f);
+        collectableImage.SetActive(true);
+        shelfObject.SetActive(true);
     }
 
 

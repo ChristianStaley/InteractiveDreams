@@ -1,18 +1,54 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GM : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    #region Singleton
+    static GM mSingleton = null;
+
+    public GM Singleton
     {
-        
+        get
+        {
+            return mSingleton;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnLevelWasLoaded(int level)
     {
-        
+        ResetVariables();
     }
+
+    private void Awake()
+    {
+        if (mSingleton == null)
+        {
+            mSingleton = this;
+            
+        }
+        else if (mSingleton != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+    #endregion
+
+
+
+    private void Update()
+    {
+
+        //Cursor.lockState = CursorLockMode.None;
+        //SceneManager.LoadScene("Menu");
+
+    }
+    
+    public static void ResetVariables()
+    {
+
+
+    }
+
 }

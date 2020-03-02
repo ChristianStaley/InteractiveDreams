@@ -20,7 +20,7 @@ public class Sleep : MonoBehaviour
     private void Update()
     {
 
-        if (Vector3.Distance(go_PC.transform.position, gameObject.transform.position) > 3)
+        if (Vector3.Distance(go_PC.transform.position, gameObject.transform.position) > 5)
         {
             panelExit.SetActive(false);
             confirm = false;
@@ -36,7 +36,7 @@ public class Sleep : MonoBehaviour
 
         }
 
-        if(other.tag == "Player" && confirm && Input.GetKeyDown("e"))
+        if(other.tag == "Player" && confirm && Input.GetKeyDown("r"))
         {
             SceneManager.LoadScene("StartScreen");
         }

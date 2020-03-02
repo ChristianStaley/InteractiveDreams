@@ -26,10 +26,12 @@ public class PC_Interact : MonoBehaviour
                 {
                     print("Message sent");
                     hit.transform.gameObject.GetComponent<PickupObject>().PlayerInteraction(cam.transform);
+                }
 
-                    //SendMessageUpwards("PlayerInteraction", cam.transform, SendMessageOptions.DontRequireReceiver);
-                    
-                    //SendMessage("PlayerInteraction", cam.transform, SendMessageOptions.DontRequireReceiver);
+                if (hit.transform.gameObject.CompareTag("Animated"))
+                {
+                    print("Message sent");
+                    hit.transform.gameObject.GetComponent<ObjectAnimation>().PlayAnimation();
                 }
             }
 
