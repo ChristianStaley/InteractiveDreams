@@ -1,27 +1,101 @@
 fileFormatVersion: 2
-guid: f7414274ac1677f489a9a93aa3b15262
+guid: c40901a6f4f184102bb15d1a0537c32c
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
-      74: -203655887218126122
-    second: Breathing Idle
-  externalObjects:
+      1: 100000
+    second: BODY1
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: _Body_Mid
-    second: {fileID: 2100000, guid: 21b09627b887bb84caa0ee510b3f4778, type: 2}
+      1: 100002
+    second: FRONT_LEFT_WHEEL
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: _Eye_trans
-    second: {fileID: 2100000, guid: 6d9153f50604ebd47be8a14ec926d3f0, type: 2}
+      1: 100004
+    second: FRONT_RIGHT_WHEEL
+  - first:
+      1: 100006
+    second: REAR_LEFT_WHEEL
+  - first:
+      1: 100008
+    second: REAR_RIGHT_WHEEL
+  - first:
+      1: 100010
+    second: //RootNode
+  - first:
+      4: 400000
+    second: BODY1
+  - first:
+      4: 400002
+    second: FRONT_LEFT_WHEEL
+  - first:
+      4: 400004
+    second: FRONT_RIGHT_WHEEL
+  - first:
+      4: 400006
+    second: REAR_LEFT_WHEEL
+  - first:
+      4: 400008
+    second: REAR_RIGHT_WHEEL
+  - first:
+      4: 400010
+    second: //RootNode
+  - first:
+      21: 2100000
+    second: car1
+  - first:
+      21: 2100002
+    second: wheels1
+  - first:
+      23: 2300000
+    second: BODY1
+  - first:
+      23: 2300002
+    second: FRONT_LEFT_WHEEL
+  - first:
+      23: 2300004
+    second: FRONT_RIGHT_WHEEL
+  - first:
+      23: 2300006
+    second: REAR_LEFT_WHEEL
+  - first:
+      23: 2300008
+    second: REAR_RIGHT_WHEEL
+  - first:
+      33: 3300000
+    second: BODY1
+  - first:
+      33: 3300002
+    second: FRONT_LEFT_WHEEL
+  - first:
+      33: 3300004
+    second: FRONT_RIGHT_WHEEL
+  - first:
+      33: 3300006
+    second: REAR_LEFT_WHEEL
+  - first:
+      33: 3300008
+    second: REAR_RIGHT_WHEEL
+  - first:
+      43: 4300000
+    second: BODY1
+  - first:
+      43: 4300002
+    second: FRONT_LEFT_WHEEL
+  - first:
+      43: 4300004
+    second: REAR_LEFT_WHEEL
+  - first:
+      43: 4300006
+    second: FRONT_RIGHT_WHEEL
+  - first:
+      43: 4300008
+    second: REAR_RIGHT_WHEEL
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -43,37 +117,8 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Breathing Idle
-      takeName: mixamo.com
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 298
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    isReadable: 0
+    clipAnimations: []
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -106,7 +151,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
@@ -129,7 +174,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

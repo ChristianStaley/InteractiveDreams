@@ -36,6 +36,12 @@ public class GM : MonoBehaviour
     #endregion
 
 
+    public GameObject controlsUI;
+    private void Start()
+    {
+        controlsUI.SetActive(true);
+        Destroy(controlsUI, 10.0f);
+    }
 
     private void Update()
     {

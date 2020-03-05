@@ -33,6 +33,12 @@ public class PC_Interact : MonoBehaviour
                     print("Message sent");
                     hit.transform.gameObject.GetComponent<ObjectAnimation>().PlayAnimation();
                 }
+
+                if (hit.transform.gameObject.CompareTag("NPC"))
+                {
+                    print("Message sent");
+                    hit.transform.gameObject.GetComponent<NPCTalk>().TalkToPlayer();
+                }
             }
 
             else

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pickupable
   - Animated
+  - NPC
   layers:
   - Default
   - TransparentFX
