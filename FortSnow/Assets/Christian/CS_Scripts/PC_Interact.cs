@@ -11,6 +11,10 @@ public class PC_Interact : MonoBehaviour
     public GameObject AnimationIcon;
     public GameObject TalkIcon;
 
+    public GameObject snowman;
+
+    private int snowmanCount = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +47,12 @@ public class PC_Interact : MonoBehaviour
                 {
                     print("Message sent");
                     hit.transform.gameObject.GetComponent<NPCTalk>().TalkToPlayer();
+                }
+
+                if (hit.transform.gameObject.CompareTag("Terrain") && snowmanCount < 2)
+                {
+                    Instantiate(snowman, hit.point, Quaternion.identity);
+                    snowmanCount++;
                 }
             }
 
