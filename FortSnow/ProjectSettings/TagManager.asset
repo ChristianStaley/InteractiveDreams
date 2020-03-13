@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - Fire
   - Door
+  - Terrain
   layers:
   - Default
   - TransparentFX
