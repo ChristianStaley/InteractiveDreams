@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PC_Interact : MonoBehaviour
 {
     Camera cam;
+
+    public GameObject HandIcon;
+    public GameObject AnimationIcon;
+    public GameObject TalkIcon;
 
     // Start is called before the first frame update
     void Start()
@@ -12,8 +17,8 @@ public class PC_Interact : MonoBehaviour
         cam = GameObject.Find("FirstPersonCharacter").GetComponent<Camera>();
     }
 
-        // Update is called once per frame
-        void Update()
+    // Update is called once per frame
+    void Update()
     {
         if (Input.GetKeyDown("e"))
         {
@@ -33,10 +38,45 @@ public class PC_Interact : MonoBehaviour
                     print("Message sent");
                     hit.transform.gameObject.GetComponent<ObjectAnimation>().PlayAnimation();
                 }
+
+                if (hit.transform.gameObject.CompareTag("NPC"))
+                {
+                    print("Message sent");
+                    hit.transform.gameObject.GetComponent<NPCTalk>().TalkToPlayer();
+                }
             }
 
             else
                 print("I'm looking at nothing!");
+
         }
+
+        HandIcon.SetActive(false);
+        AnimationIcon.SetActive(false);
+        TalkIcon.SetActive(false);
+
+        Ray updateRay = cam.ViewportPointToRay(new Vector3(0.4F, 0.4F, 0));
+        RaycastHit updateHit;
+        if (Physics.Raycast(updateRay, out updateHit))
+        {
+            if (updateHit.transform.gameObject.CompareTag("Pickupable"))
+            {
+                HandIcon.SetActive(true);
+            }
+            if (updateHit.transform.gameObject.CompareTag("Door"))
+            {
+                HandIcon.SetActive(true);
+            }
+            if (updateHit.transform.gameObject.CompareTag("Animated"))
+            {
+                AnimationIcon.SetActive(true);
+            }
+            if (updateHit.transform.gameObject.CompareTag("NPC"))
+            {
+                TalkIcon.SetActive(true);
+            }
+        }
+
+
     }
 }
