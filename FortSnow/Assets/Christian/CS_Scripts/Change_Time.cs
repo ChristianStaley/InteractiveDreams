@@ -13,7 +13,12 @@ public class Change_Time : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        l_worldLight = GameObject.Find("Directional Light").GetComponent<Light>();
+        l_worldLight = gameObject.GetComponent<Light>();
+        if(l_worldLight == null)
+        {
+            GameObject.Find("Sun").GetComponent<Light>();
+        }
+            
         theTime = System.DateTime.Now;
         _time = theTime.Hour + ":" + theTime.Minute + ":" + theTime.Second;
 

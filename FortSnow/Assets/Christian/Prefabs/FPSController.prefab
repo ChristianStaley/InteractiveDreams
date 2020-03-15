@@ -445,7 +445,7 @@ MonoBehaviour:
   HandIcon: {fileID: 0}
   AnimationIcon: {fileID: 0}
   TalkIcon: {fileID: 0}
-  snowman: {fileID: 3019072186119708225, guid: 11cbf82cf7857b44e9a9a93e0c29ae9d, type: 3}
+  snowman: {fileID: 824040094084527844, guid: c7dddefd65e33c54c829b6e70a54e06b, type: 3}
 --- !u!1 &6447534515481121295
 GameObject:
   m_ObjectHideFlags: 0
