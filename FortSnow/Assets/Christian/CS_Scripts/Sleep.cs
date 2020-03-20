@@ -38,6 +38,7 @@ public class Sleep : MonoBehaviour
 
         if(other.tag == "Player" && confirm && Input.GetKeyDown("r"))
         {
+            
             SceneManager.LoadScene("StartScreen");
         }
 

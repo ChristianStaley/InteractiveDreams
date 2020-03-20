@@ -46,14 +46,16 @@ public class Change_Time : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("r"))
-        {
-            l_worldLight.transform.Rotate(-50, 0, 0);
-        }
-        if (Input.GetKeyDown("t"))
-        {
-            l_worldLight.transform.Rotate(50, 0, 0);
-        }
+        // Force Time Change
+        
+        //if (Input.GetKeyDown("r"))
+        //{
+        //    l_worldLight.transform.Rotate(-50, 0, 0);
+        //}
+        //if (Input.GetKeyDown("t"))
+        //{
+        //    l_worldLight.transform.Rotate(50, 0, 0);
+        //}
 
     }
 }
