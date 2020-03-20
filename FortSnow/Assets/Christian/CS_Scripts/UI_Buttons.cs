@@ -6,12 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class UI_Buttons : MonoBehaviour
 {
-
-    private void Start()
+    private void Awake()
     {
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
-
     public void ExitGame()
     {
         Application.Quit();

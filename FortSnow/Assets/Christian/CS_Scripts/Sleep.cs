@@ -38,7 +38,8 @@ public class Sleep : MonoBehaviour
 
         if(other.tag == "Player" && confirm && Input.GetKeyDown("r"))
         {
-            
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadScene("StartScreen");
         }
 

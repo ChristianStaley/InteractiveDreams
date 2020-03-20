@@ -5416,9 +5416,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Start
-
-'
+  m_Text: Menu
 --- !u!222 &1070388224
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5582,7 +5580,9 @@ MonoBehaviour:
 
     - Norbert Csecs
 
-    - Peter Naghi'
+    - Peter Naghi
+
+    - Dawid Bracki'
 --- !u!222 &1640594467
 CanvasRenderer:
   m_ObjectHideFlags: 0
